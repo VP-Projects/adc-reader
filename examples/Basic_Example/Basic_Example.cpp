@@ -25,11 +25,11 @@ enum
     SAMPLE_TIME_MILISECS = 1000
 };
 
-const float VCC    = 3.3; // ADC reference voltage for convertion [V].
-const float inMin  = 0.7; // Minimum input value (analog voltage [V]).
-const float inMax  = 3.1; // Maximum input value (analog voltage [V]).
-const float outMin = 10;  // Minimum output value (temperature [°C]).
-const float outMax = 40;  // Maximum output value (temperature [°C]).
+const float VCC     = 3.3; // ADC reference voltage for convertion [V].
+const float IN_MIN  = 0.7; // Minimum input value (analog voltage [V]).
+const float IN_MAX  = 3.1; // Maximum input value (analog voltage [V]).
+const float OUT_MIN = 10;  // Minimum output value (temperature [°C]).
+const float OUT_MAX = 40;  // Maximum output value (temperature [°C]).
 
 unsigned long lastTime = 0; // Last recorded time [ms].
 
@@ -43,7 +43,7 @@ void setup()
     adc.SetAdcRange(AdcReader::ADC_10_BITS);
     adc.UseAdcCal(false);
     adc.SetVcc(VCC);
-    adc.SetInOutRange(inMin, inMax, outMin, outMax);
+    adc.SetInOutRange(IN_MIN, IN_MAX, OUT_MIN, OUT_MAX);
 
     Serial.print("Vin[V]");
     Serial.print('\t');

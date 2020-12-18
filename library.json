@@ -1,36 +1,44 @@
 {
-    "name": "ADC Reader",
     "version": "0.1.0",
-    "description": "Basic ADC reading functionality",
-    "keywords": "ADC, analog",
-    "repository":
-    {
-      "type": "git",
-      "url": "https://github.com/VP-Projects/adc-reader.git"
+    "license": "MIT",
+    "frameworks": [
+      "arduino"
+    ],
+    "name": "ADC Reader",
+    "keywords": [
+      "adc",
+      "analog"
+    ],
+    "export": {
+      "exclude": [
+        ".vscode/",
+        ".pio/",
+        "*.gitignore",
+        "*/platformio.ini"
+      ]
     },
-    "authors":
-    [
+    "examples": [
       {
-        "name": "Víctor Pizarro",
-        "email": "v.pizarro@outlook.cl",
-        "maintainer": true
+        "base": "examples\\Basic_Example",
+        "files": [
+          "Basic_Example.cpp"
+        ],
+        "name": "Basic_Example"
       }
     ],
-    "license": "MIT",
-    "export":
-    {
-        "include":
-        [
-            "examples/"
-        ],
-        "exclude":
-        [
-            ".vscode/",
-            ".pio/",
-            "*.gitignore",
-            "*/platformio.ini"
-        ]
-    },
-    "frameworks": "Arduino",
-    "platforms": "espressif32"
+    "description": "Basic ADC reading functionality",
+    "platforms": [
+      "espressif32"
+    ],
+    "authors": [
+      {
+        "email": "v.pizarro@outlook.cl",
+        "maintainer": true,
+        "name": "V�ctor Pizarro"
+      }
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/VP-Projects/adc-reader.git"
+    }
   }

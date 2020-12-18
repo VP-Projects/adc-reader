@@ -13,12 +13,10 @@
       {
         "name": "Víctor Pizarro",
         "email": "v.pizarro@outlook.cl",
-        "url": "",
         "maintainer": true
       }
     ],
     "license": "MIT",
-    "homepage": "",
     "export":
     {
         "include":
@@ -32,10 +30,6 @@
             "*.gitignore",
             "*/platformio.ini"
         ]
-    },
-
-    "dependencies":
-    {
     },
     "frameworks": "Arduino",
     "platforms": "espressif32"

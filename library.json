@@ -1,0 +1,42 @@
+{
+    "name": "ADC Reader",
+    "version": "0.1.0",
+    "description": "Basic ADC reading functionality",
+    "keywords": "ADC, analog",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/VP-Projects/adc-reader.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Víctor Pizarro",
+        "email": "v.pizarro@outlook.cl",
+        "url": "",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "export":
+    {
+        "include":
+        [
+            "examples/"
+        ],
+        "exclude":
+        [
+            ".vscode/",
+            ".pio/",
+            "*.gitignore",
+            "*/platformio.ini"
+        ]
+    },
+
+    "dependencies":
+    {
+    },
+    "frameworks": "Arduino",
+    "platforms": "espressif32"
+  }

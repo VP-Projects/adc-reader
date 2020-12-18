@@ -1,44 +1,49 @@
 {
-    "version": "0.1.0",
-    "license": "MIT",
-    "frameworks": [
-      "arduino"
-    ],
     "name": "ADC Reader",
-    "keywords": [
-      "adc",
-      "analog"
-    ],
-    "export": {
-      "exclude": [
-        ".vscode/",
-        ".pio/",
-        "*.gitignore",
-        "*/platformio.ini"
-      ]
-    },
-    "examples": [
-      {
-        "base": "examples\\Basic_Example",
-        "files": [
-          "Basic_Example.cpp"
-        ],
-        "name": "Basic_Example"
-      }
-    ],
+    "version": "0.1.0",
     "description": "Basic ADC reading functionality",
-    "platforms": [
-      "espressif32"
-    ],
+    "keywords": ["adc", "analog"],
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/VP-Projects/adc-reader.git"
+    },
     "authors": [
-      {
-        "email": "v.pizarro@outlook.cl",
-        "maintainer": true,
-        "name": "V�ctor Pizarro"
-      }
+        {
+            "name": "Víctor Pizarro",
+            "email": "v.pizarro@outlook.cl",
+            "maintainer": true
+        }
     ],
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/VP-Projects/adc-reader.git"
-    }
-  }
+    "license": "MIT",
+    "frameworks":
+    [
+        "arduino"
+    ],
+
+    "export":
+    {
+        "exclude":
+        [
+            ".vscode/",
+            ".pio/",
+            ".gitignore",
+            "platformio.ini"
+        ]
+    },
+    "examples":
+    [
+        {
+            "base": "examples\\Basic_Example",
+            "files":
+            [
+                "Basic_Example.cpp"
+            ],
+            "name": "Basic_Example"
+        }
+    ],
+    "platforms":
+    [
+        "espressif32"
+    ]
+}
